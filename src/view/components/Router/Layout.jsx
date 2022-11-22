@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="pt-10 pb-10">
         <div className="container">
           <div className="d-flex">
             <Nav className="left-wrapper" />
