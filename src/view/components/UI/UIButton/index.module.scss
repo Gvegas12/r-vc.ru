@@ -1,0 +1,11 @@
+.root {
+  cursor: pointer;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+
+  transition: transform 0.1s linear;
+  &:active {
+    transform: translateY(1px);
+  }
+}

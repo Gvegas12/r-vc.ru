@@ -17,3 +17,23 @@
 main {
   background-color: var(--main-color--bg);
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 97%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.left-wrapper {
+  width: 25%;
+}
+.middle-wrapper {
+  width: 45%;
+}
+.right-wrapper {
+  width: 30%;
+}

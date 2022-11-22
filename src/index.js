@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import AppRouter from "./view/components/Router/AppRouter";
 
 import "./view/assets/styles/scss/main.scss";
+import "macro-css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppRouter />);

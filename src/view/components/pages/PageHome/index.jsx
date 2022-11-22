@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import styles from './index.module.scss'
+import styles from "./index.module.scss";
 
 const PageHome = () => {
-  return (
-    <div>PageHome</div>
-  )
-}
+  return <div>PageHome</div>;
+};
 
-export default PageHome
+export default PageHome;
