@@ -1,0 +1,19 @@
+@import url("../default/normalize.css");
+@import url("../default/reset.css");
+@import url("../color.css");
+// @import "img";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  font-family: sans-serif, "Roboto Mono", monospace;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+}
+
+main {
+  background-color: var(--main-color--bg);
+}

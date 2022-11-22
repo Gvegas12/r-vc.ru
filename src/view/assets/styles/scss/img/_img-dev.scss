@@ -1,0 +1,53 @@
+// DEV
+%svg-icon_sm {
+  width: 18px;
+  height: 18px;
+}
+%svg-icon_md {
+  width: 24px;
+  height: 24px;
+}
+%svg-icon_lg {
+  width: 32px;
+  height: 32px;
+}
+
+%bg {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+%bg_cover {
+  @extend %bg;
+  background-size: cover;
+}
+%bg_contain {
+  @extend %bg;
+  background-size: contain;
+}
+@mixin bg-styles($bg-url, $bg-size) {
+  background-image: url("../../../img/#{$bg-url}");
+  @if $bg-size == cover {
+    @extend %bg_cover;
+  }
+  @if $bg-size == contain {
+    @extend %bg_contain;
+  }
+}
+@mixin bg-styles_img($w, $h, $bg-url, $bg-size) {
+  width: $w;
+  height: $h;
+  @include bg-styles($bg-url, $bg-size);
+}
+@mixin bg-styles_svg($size, $bg-url, $bg-size) {
+  @if ($size == "sm") {
+    @extend %svg-icon_sm;
+  }
+  @if ($size == "md") {
+    @extend %svg-icon_md;
+  }
+  @if ($size == "lg") {
+    @extend %svg-icon_lg;
+  }
+  @include bg-styles("svg/#{$bg-url}", $bg-size);
+}

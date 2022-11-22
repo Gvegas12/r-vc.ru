@@ -1,0 +1,74 @@
+@import "img-dev";
+
+// SVG
+.burger-svg {
+  cursor: pointer;
+  @include bg-styles_svg("md", "burger.svg", contain);
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.heart-icon {
+  @include bg-styles_svg("sm", "heart.svg", contain);
+}
+.plus-icon {
+  @include bg-styles_svg("md", "plus.svg", contain);
+}
+.bell-icon {
+  @include bg-styles_svg("md", "bell.svg", contain);
+}
+.account-icon {
+  @include bg-styles_svg("md", "account-icon.svg", contain);
+}
+.subscribe-icon {
+  @include bg-styles_svg("sm", "subscribe.svg", contain);
+}
+.unsubscribe-icon {
+  @include bg-styles_svg("sm", "unsubscribe.svg", contain);
+}
+.message-icon {
+  @include bg-styles_svg("sm", "message.svg", contain);
+}
+.favorite-icon {
+  @include bg-styles_svg("sm", "favorite.svg", contain);
+}
+.arrow_up-icon {
+  @include bg-styles_svg("sm", "arrow_up.svg", contain);
+}
+.arrow_down-icon {
+  @include bg-styles_svg("sm", "arrow_down.svg", contain);
+}
+
+/// NAV-SVG
+.fire-icon {
+  @include bg-styles_svg("md", "fire.svg", contain);
+}
+.clock-icon {
+  @include bg-styles_svg("md", "clock.svg", contain);
+}
+.city-icon {
+  @include bg-styles_svg("md", "city.svg", contain);
+}
+.job-icon {
+  @include bg-styles_svg("md", "job.svg", contain);
+}
+.calendar-icon {
+  @include bg-styles_svg("md", "calendar.svg", contain);
+}
+.listItem-icon {
+  @include bg-styles_svg("md", "list-item.svg", contain);
+}
+
+// IMG
+// .logo {
+//   @include bg-styles_img(216px, 52px, "logo.png", contain);
+// }
+// .hero-bgImg {
+//   @include bg-styles_img(100%, 100%, "hero-bg.jpg", cover);
+// }
+// .brandItem-img {
+//   @include bg-styles_img(160px, 60px, "brands-item.png", contain);
+// }
+// .location-bgImg {
+//   @include bg-styles_img(100%, 100%, "location_bg.jpg", cover);
+// }
