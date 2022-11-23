@@ -21,21 +21,23 @@ const Header = () => {
                 alt="logo"
               />
             </div>
-            <div
-              className={"d-flex middle-wrapper align-center justify-between"}
-            >
-              <input
-                className={styles.search_input}
-                type="text"
-                placeholder="Поиск"
-              />
-              <UI.Button className={styles.create_btn}>
-                <img
-                  className={"icon mr-10"}
-                  src="http://localhost:7000/static/svg/plus.svg"
+            <div className="middle-wrapper">
+              <div
+                className={`${styles.middleWrapperContent} d-flex align-center justify-between`}
+              >
+                <input
+                  className={styles.search_input}
+                  type="text"
+                  placeholder="Поиск"
                 />
-                <span>Создать</span>
-              </UI.Button>
+                <UI.Button className={styles.create_btn}>
+                  <img
+                    className={"icon mr-10"}
+                    src="http://localhost:7000/static/svg/plus.svg"
+                  />
+                  <span>Создать</span>
+                </UI.Button>
+              </div>
             </div>
             <div className={"d-flex align-center justify-end right-wrapper"}>
               <img

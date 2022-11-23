@@ -1,0 +1,11 @@
+.card {
+  & > :not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .infoContainer {
+    display: flex;
+    & > :not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}

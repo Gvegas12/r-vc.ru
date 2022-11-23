@@ -1,9 +1,12 @@
+@import "../../../assets/styles/scss/variables";
+
 .root {
-  .cardList_smart {
+  @extend %middle-content--width;
+  .newsList_smart {
     border-radius: 10px;
     padding: 15px 20px;
     background-color: white;
-    .cardItem_smart {
+    .newsItem_smart {
       cursor: pointer;
       font-size: 15px;
       line-height: 1.5;
@@ -17,25 +20,14 @@
       }
     }
   }
-  .cardList {
-    .cardItem {
+  .newsList {
+    .newsItem {
       border-radius: 10px;
       padding: 15px 20px;
       background-color: white;
 
       &:not(:last-child) {
         margin-bottom: 15px;
-      }
-      .card {
-        & > :not(:last-child) {
-          margin-bottom: 10px;
-        }
-        .infoContainer {
-          display: flex;
-          & > :not(:last-child) {
-            margin-right: 50px;
-          }
-        }
       }
     }
   }
