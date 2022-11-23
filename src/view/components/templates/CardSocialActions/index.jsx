@@ -1,10 +1,11 @@
 import React from "react";
 
-import styles from './index.module.scss'
+import styles from "./index.module.scss";
 
-const CardSocialActions = () => {
+const CardSocialActions = ({ className }) => {
+  let classNames = className ? className + " " : "";
   return (
-    <div className="d-flex justify-between">
+    <div className={classNames + "d-flex justify-between"}>
       <div className={styles.infoContainer}>
         <div>62</div>
         <div>favorite</div>

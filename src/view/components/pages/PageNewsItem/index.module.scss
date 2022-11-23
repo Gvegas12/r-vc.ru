@@ -1,5 +1,22 @@
+@import "../../../assets/styles/scss/variables";
+
 .root {
+  background-color: white;
+  .titleWrapper,
+  .content,
+  .cardSocialInfo {
+    @extend %middle-content--width;
+  }
+  .cardSocialInfo > *:not(:last-child) {
+    margin-right: 50px;
+  }
+  img {
+    width: 100%;
+  }
   .createdAt {
     width: max-content;
+  }
+  h1 {
+    font-size: 1.5rem;
   }
 }

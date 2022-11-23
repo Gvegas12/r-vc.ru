@@ -29,9 +29,14 @@ const PageHome = () => {
         ))}
       </ul>
       <ul className={styles.newsList}>
-        {data.map(({ id, ...newsInfo }) => (
-          <li key={id} className={styles.newsItem}>
-            <NewsCard {...newsInfo} />
+        {data.map(({ id, ...newsInfo }, i) => (
+          <li
+            onClick={() => 
+              localStorage.setItem("selectedNewsItemIndex", i)}
+            key={id}
+            className={styles.newsItem}
+          >
+            <NewsCard index={i} {...newsInfo} />
           </li>
         ))}
       </ul>

@@ -5,7 +5,7 @@ import CardSocialActions from "../CardSocialActions";
 
 import styles from "./index.module.scss";
 
-const NewsCard = ({ author, title, description, urlToImage }) => {
+const NewsCard = ({ author, title, description, urlToImage, index }) => {
   return (
     <div className={styles.card}>
       <div className="d-flex justify-between">
@@ -20,7 +20,7 @@ const NewsCard = ({ author, title, description, urlToImage }) => {
         <div className={styles.subscribe}>Подписаться</div>
       </div>
       <div>
-        <Link to={HOME_ROUTE + 1}>
+        <Link to={HOME_ROUTE + index}>
           <div>
             <h3 className="mb-10">{title}</h3>
             <p className="mb-10">{description}</p>
