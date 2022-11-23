@@ -19,6 +19,16 @@
         color: rgb(9, 9, 200);
       }
     }
+
+    .limitBtn {
+      cursor: pointer;
+      font-weight: 600;
+      background-color: transparent;
+      border: none;
+      &:hover {
+        color: rgb(9, 9, 200);
+      }
+    }
   }
   .newsList {
     .newsItem {
@@ -27,7 +37,7 @@
       background-color: white;
 
       &:not(:last-child) {
-        margin-bottom: 15px;
+        margin-bottom: 35px;
       }
     }
   }
