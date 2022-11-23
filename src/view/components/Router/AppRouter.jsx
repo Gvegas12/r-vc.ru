@@ -11,8 +11,8 @@ const AppRouter = () => {
       <Routes>
         <Route path={HOME_ROUTE} element={<Layout />}>
           <Route index element={<PageHome />} />
-          {publicRoutes.map(({ path, Component }) => (
-            <Route path={path} element={<Component />} />
+          {publicRoutes.map(({ path, Component }, i) => (
+            <Route key={i} path={path} element={<Component />} />
           ))}
         </Route>
       </Routes>
